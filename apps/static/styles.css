@@ -1,0 +1,48 @@
+/* Add a black background color to the top navigation */
+
+/* ✅ Navigation bar */
+.topnav {
+    background-color: white; /* Removes unwanted gray background */
+    width: 100%;
+    padding: 10px 0; /* Adds spacing */
+    display: flex;
+    justify-content: left; /* Aligns links to the left */
+    align-items: center;
+    border-bottom: 3px solid black; /* ✅ Adds a black underline */
+  }
+  
+  /* ✅ Different colors for each link */
+  .topnav a:nth-child(1) { /* Home */
+    color: red;
+  }
+  
+  .topnav a:nth-child(2) { /* List Books */
+    color: blue;
+  }
+  
+  .topnav a:nth-child(3) { /* About */
+    color: black;
+  }
+  
+  /* ✅ Style the links inside the navigation */
+  .topnav a {
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  /* ✅ Fix: Highlight the active page */
+  .topnav a.active {
+    text-decoration: underline;
+  }
+  
+  /* ✅ Add hover effect */
+  .topnav a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+  
+    

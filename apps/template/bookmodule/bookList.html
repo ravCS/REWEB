@@ -1,0 +1,48 @@
+{% extends "Layouts/base.html" %}
+
+{% load static %}
+
+{% block title %} BookList Page {% endblock title %}
+
+{% block stylesheets %}
+    <style>
+        table {
+            width: 20%;
+            margin: 20px auto;
+            font-size: 1em;
+            font-family: Times New Roman;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: pink;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+{% endblock stylesheets %}
+
+{% block content %}
+
+{% for obj in books %}
+     ID: {{obj.id}}, Title: {{obj.title}}
+     <hr>
+{% endfor %}
+
+
+{% endblock content %}
